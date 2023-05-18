@@ -2,6 +2,8 @@
 
 # Way to execute the script
 
-./pagalnew <Album link from the Pagalnew.com website>
+```shell
+./pagalnew https://pagalnew.com/album/name.html
+```
 
 Sit back relax and wait for the scipt to complete the downloading process!...
