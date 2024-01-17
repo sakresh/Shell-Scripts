@@ -1,17 +1,2 @@
-# Songs - For Downloading all songs from a particular Album in Pagalnew Website
+# Shell scripts I use on my Linux System for my day to day tasks
 
-## Way to execute the script
-
-### Dependency required - aria2
-
-Install in Arch linux by using
-
-```
-yay -S aria2
-```
-
-```shell
-./songs https://pagalnew.com/album/name.html
-```
-
-Sit back relax and wait for the scipt to complete the downloading process!...
