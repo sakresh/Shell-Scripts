@@ -1,0 +1,14 @@
+#!/bin/sh
+    
+case "$(echo -e "Lock\nShutdown\nRestart\nLogout\nSuspend" | dmenu \
+    -i -p \
+    "Power:")" in
+        Shutdown) exec systemctl poweroff;;
+        Restart) exec systemctl reboot;;
+        Logout) kill -HUP $XDG_SESSION_PID;;
+        Suspend) exec systemctl suspend;;
+        Lock) exec betterlockscreen -l dimblur;;
+esac
+
+#betterlockscreen -u Pictures/Wallpapers/batman.jpg --blur 1.0
+#betterlockscreen -l dimblur
